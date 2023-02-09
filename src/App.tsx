@@ -1,14 +1,14 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      <div>
+    <div className="App text-center">
+      <div className="flex justify-center">
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
@@ -18,18 +18,11 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-        <h1 className="text-3xl font-bold text-red-400">Hello world!</h1>
-        <Button variant="contained">Contained</Button>
+      <Typography variant="h1">This is the boilerplate of Vite, Typescript, Mui and Tailwind CSS3</Typography>
+        <h1 className="text-3xl font-bold text-red-400">Let's GO</h1>
+        {/* <Button variant="contained">Contained</Button> */}
+        
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }
